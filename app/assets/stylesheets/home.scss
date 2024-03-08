@@ -6,3 +6,27 @@
   background-repeat: no-repeat;
   /* Aggiungi altri stili se necessario */
 }
+
+.line {
+  color: #171F23;
+}
+
+.hr {
+  color: #171F23;
+}
+
+.icon-container {
+  width: 75px; /* Adjust size as needed */
+  height: 75px; /* Adjust size as needed */
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%; /* Makes the container circular */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for depth */
+}
+
+.icon-container i {
+  color: #171f23; /* Icon color */
+  font-size: 24px; /* Adjust icon size as needed */
+}
