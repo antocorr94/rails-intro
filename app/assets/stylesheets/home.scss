@@ -7,13 +7,13 @@
   /* Aggiungi altri stili se necessario */
 }
 
-.line {
-  color: #171F23;
+hr {
+  border-color: #171F23; /* Colore della linea */
+  width: 50%; /* Larghezza della linea */
+  margin: 0; /* Rimuove il margine predefinito */
+  height: 5px; /* Altezza della linea */
 }
 
-.hr {
-  color: #171F23;
-}
 
 .icon-container {
   width: 75px; /* Adjust size as needed */
