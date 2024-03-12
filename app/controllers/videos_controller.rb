@@ -5,11 +5,11 @@ class VideosController < ApplicationController
   end
 
   def show
-    @video = Video.find(params[:id])
   end
 
   def travel_videos
-    @videos = Video.where(category: 'Travel Videos')
+    @category = Category.find_by(name: 'Travel Videos')
+    @videos = @category.videos
   end
 
   def sports_videos
