@@ -1,3 +1,7 @@
+# app/models/video.rb
 class Video < ApplicationRecord
-  belongs_to :subcategory
+  validates :title, presence: true
+  validates :url, presence: true, format: { with: /\Ahttps?:\/\/[\S]+\z/, message: "deve essere un URL valido" }
+
+  belongs_to :category, class_name: 'Category'
 end

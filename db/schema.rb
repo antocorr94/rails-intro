@@ -10,37 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_03_11_182705) do
+ActiveRecord::Schema[7.1].define(version: 2024_03_12_211936) do
   create_table "categories", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "other_videos_subcategories", force: :cascade do |t|
     t.string "name"
-    t.integer "videography_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "sports_videos_subcategories", force: :cascade do |t|
-    t.string "name"
-    t.integer "videography_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "subcategories", force: :cascade do |t|
-    t.string "name"
-    t.integer "videography_id", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["videography_id"], name: "index_subcategories_on_videography_id"
-  end
-
-  create_table "travel_videos_subcategories", force: :cascade do |t|
-    t.string "name"
-    t.integer "videography_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -58,13 +30,8 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_11_182705) do
     t.integer "subcategory_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "video_url"
-    t.integer "category_id", null: false
-    t.index ["category_id"], name: "index_videos_on_category_id"
     t.index ["subcategory_id"], name: "index_videos_on_subcategory_id"
   end
 
-  add_foreign_key "subcategories", "videographies"
-  add_foreign_key "videos", "categories"
   add_foreign_key "videos", "subcategories"
 end

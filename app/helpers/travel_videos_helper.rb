@@ -1,0 +1,2 @@
+module TravelVideosHelper
+end

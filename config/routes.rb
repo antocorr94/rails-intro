@@ -1,16 +1,14 @@
+#routes.rb
 Rails.application.routes.draw do
-  get 'videos/show'
-  get 'subcategories/show'
-  get 'videography/index'
-  get 'videography/show'
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  resources :videos, only: [:index, :show]
 
-  # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
-  # Can be used by load balancers and uptime monitors to verify that the app is live.
-  get "up" => "rails/health#show", as: :rails_health_check
+  get 'videos/travel_videos', to: 'videos#travel_videos', as: 'travel_videos'
+  get 'videos/sports_videos', to: 'videos#sports_videos', as: 'sports_videos'
+  get 'videos/other_videos', to: 'videos#other_videos', as: 'other_videos'
+
+  # Altre routes...
+
   root to: "pages#home"
   get "about", to: "pages#about"
   get "contact", to: "pages#contact"
-  # Defines the root path route ("/")
-  # root "posts#index"
 end
