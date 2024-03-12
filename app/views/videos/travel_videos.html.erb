@@ -2,7 +2,8 @@
   <div class="carousel-inner">
     <% @videos.each_with_index do |video, index| %>
       <div class="carousel-item <%= 'active' if index.zero? %>">
-        <iframe width="560" height="315" src="<%= video.url %>" frameborder="0" allowfullscreen></iframe>
+        <% embed_url = video.url.gsub("watch?v=", "embed/") %>
+        <iframe width="560" height="315" src="<%= embed_url %>" frameborder="0" allowfullscreen></iframe>
         <div class="carousel-caption">
           <h5><%= video.title %></h5>
           <p><%= video.description %></p>
