@@ -4,7 +4,7 @@ sports_videos = Category.create(name: 'Sports Videos')
 other_videos = Category.create(name: 'Other Videos')
 
 # Creazione dei video associati alle categorie
-Video.create(title: 'Bali 2023', url: 'https://www.youtube.com/watch?v=rsqseWO4JR8', category_id: travel_videos.id)
+Video.create(title: 'Bali 2023', url: 'https://www.youtube.com/watch?v=rsqseWO4JR8', category_id: travel_videos.id, preview_image_url: )
 Video.create(title: 'California 2022', url: 'https://www.youtube.com/watch?v=VuY3Y9Cu-Lw', category_id: travel_videos.id)
 Video.create(title: 'Norway 2022', url: 'https://www.youtube.com/watch?v=c06K4rsrawU', category_id: travel_videos.id)
 
