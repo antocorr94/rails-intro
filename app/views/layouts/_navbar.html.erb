@@ -1,40 +1,40 @@
-<nav class="navbar navbar-expand-lg <%= 'bg-white' unless controller_name == 'home' %> p-3">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-    <div class='airplane'></div>
+<nav class="navbar navbar-expand-lg <%= 'bg-white' unless controller_name == 'pages' && action_name == 'home' %> p-3">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="<%= root_path %>">
+      <div class='airplane'></div>
     </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-      <div class=" collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav ms-auto ">
-          <li class="nav-item dropdown">
-            <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Videography
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="#">Travel Videos</a></li>
-              <li><a class="dropdown-item" href="#">Sports Videos</a></li>
-              <li><a class="dropdown-item" href="#">Other Videos</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link mx-2" href="#">Graphic Design</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link mx-2" href="#">Illustration</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link mx-2 active" aria-current="page" href="#">Web Development</a>
-          </li>
-           <li class="nav-item">
-            <a class="nav-link mx-2 active" aria-current="page" href="#">Contacts</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link mx-2 active" aria-current="page" href="#"><strong>BLOG</strong></a>
-          </li>
-        </ul>
-      </div>
+    <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto ">
+        <li class="nav-item dropdown">
+          <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Videography
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Travel Videos</a></li>
+            <li><a class="dropdown-item" href="#">Sports Videos</a></li>
+            <li><a class="dropdown-item" href="#">Other Videos</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link mx-2" href="#">Graphic Design</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link mx-2" href="#">Illustration</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link mx-2 active" aria-current="page" href="#">Web Development</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link mx-2 active" aria-current="page" href="#">Contacts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link mx-2 active" aria-current="page" href="#"><strong>BLOG</strong></a>
+        </li>
+      </ul>
     </div>
-    </nav>
+  </div>
+</nav>
