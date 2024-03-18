@@ -1,9 +1,9 @@
 <div id="videoCarousel" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner" width='100vh' height='100vh'>
+  <div class="carousel-inner">
     <% @videos.each_with_index do |video, index| %>
       <div class="carousel-item <%= 'active' if index.zero? %>">
         <% embed_url = video.url.gsub("watch?v=", "embed/") %>
-        <iframe src="<%= embed_url %>" frameborder="0" allowfullscreen></iframe>
+        <iframe src="<%= video.preview_image_url %>" frameborder="0" allowfullscreen></iframe>
         <div class="carousel-caption">
           <h5><%= video.title %></h5>
           <p><%= video.description %></p>
@@ -20,3 +20,4 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
+
