@@ -1,7 +1,7 @@
 .card {
-  margin: 0; /* Rimuove il margine inferiore */
+  --bs-card-title-spacer-y: 0;
 }
 
 h5 {
-  font-family: $abhaya-libre;
+  font-family: 'Abhaya Libre', sans-serif;
 }

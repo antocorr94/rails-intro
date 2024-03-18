@@ -3,7 +3,7 @@ travel_videos = Category.create(name: 'Travel Videos')
 sports_videos = Category.create(name: 'Sports Videos')
 other_videos = Category.create(name: 'Other Videos')
 
-# Creazione dei video associati alle categorie
+# Creazione dei video travel
 Video.create(title: 'Bali 2023',
               url: 'https://www.youtube.com/watch?v=rsqseWO4JR8',
               category_id: travel_videos.id,
@@ -68,3 +68,31 @@ Video.create(title: 'Lisboa 2018',
               url: 'https://www.youtube.com/watch?v=F60ArBYkA8U',
               category_id: travel_videos.id,
               preview_image_url: 'https://res.cloudinary.com/devalszkz/image/upload/v1710771501/Norway_2022_ybasd1.png')
+
+
+
+# Creazione dei video di sport
+Video.create(title: 'LEN Final Eight - Belgrade 2022',
+url: 'https://www.youtube.com/watch?v=cFc9U9BuSew',
+category_id: sports_videos.id,
+preview_image_url: 'https://res.cloudinary.com/devalszkz/image/upload/v1710771013/Bali_2023_vvfrkc.png')
+
+Video.create(title: 'WP2020BUDAPEST - Warm Up',
+url: 'https://www.youtube.com/watch?v=Kqfzw6fIsGo',
+category_id: sports_videos.id,
+preview_image_url: 'https://res.cloudinary.com/devalszkz/image/upload/v1710771027/California_2022_fk2jmh.png')
+
+Video.create(title: 'WP2020BUDAPEST - Balls stop motion',
+url: 'https://www.youtube.com/watch?v=i1TVhkGHSsU',
+category_id: sports_videos.id,
+preview_image_url: 'https://res.cloudinary.com/devalszkz/image/upload/v1710771501/Norway_2022_ybasd1.png')
+
+Video.create(title: 'WP2020BUDAPEST - Backstage',
+url: 'https://www.youtube.com/watch?v=IiAhSHK_3f8',
+category_id: sports_videos.id,
+preview_image_url: 'https://res.cloudinary.com/devalszkz/image/upload/v1710771013/Gran_Canaria_2022_qhjn1u.png')
+
+Video.create(title: 'LEN Final Eight - Hannover 2019',
+url: 'https://www.youtube.com/watch?v=PO8yQdmr61U',
+category_id: sports_videos.id,
+preview_image_url: 'https://res.cloudinary.com/devalszkz/image/upload/v1710771617/Creta_2021_p2pwea.png')

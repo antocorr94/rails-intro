@@ -1,10 +1,16 @@
 <div class="row m-2 pt-2">
   <% @videos.each do |video| %>
     <div class="col-md-4">
-      <div class="card mb-2git a shadow-sm">
+      <div class="card mb-4 shadow-sm">
         <img src="<%= video.preview_image_url %>" class="card-img-top" alt="<%= video.title %>">
         <div class="card-body">
-          <h5 class="card-title"><%= video.title %></h5>
+          <div class='d-flex justify-content-between align-self-center'>
+            <h5 class="card-title"><%= video.title %></h5>
+            <% youtube_video_id = video.url.split('v=')[1] %>
+            <!-- Aggiungi attributi data per passare l'ID del video a JavaScript -->
+            <a href="https://www.youtube.com/watch?v=<%= youtube_video_id %>" target="_blank" style="color: #171f23;"><i class="fa-solid fa-circle-play" style="cursor: pointer;"></i></a>
+          </div>
+            <%# <p class="card-text"><%= video.description %>
         </div>
       </div>
     </div>
