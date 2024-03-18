@@ -1,23 +1,12 @@
-<div id="videoCarousel" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <% @videos.each_with_index do |video, index| %>
-      <div class="carousel-item <%= 'active' if index.zero? %>">
-        <% embed_url = video.url.gsub("watch?v=", "embed/") %>
-        <iframe src="<%= video.preview_image_url %>" frameborder="0" allowfullscreen></iframe>
-        <div class="carousel-caption">
-          <h5><%= video.title %></h5>
-          <p><%= video.description %></p>
+<div class="row m-2 pt-2">
+  <% @videos.each do |video| %>
+    <div class="col-md-4">
+      <div class="card mb-2git a shadow-sm">
+        <img src="<%= video.preview_image_url %>" class="card-img-top" alt="<%= video.title %>">
+        <div class="card-body">
+          <h5 class="card-title"><%= video.title %></h5>
         </div>
       </div>
-    <% end %>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+    </div>
+  <% end %>
 </div>
-

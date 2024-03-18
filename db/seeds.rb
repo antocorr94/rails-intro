@@ -4,6 +4,67 @@ sports_videos = Category.create(name: 'Sports Videos')
 other_videos = Category.create(name: 'Other Videos')
 
 # Creazione dei video associati alle categorie
-Video.create(title: 'Bali 2023', url: 'https://www.youtube.com/watch?v=rsqseWO4JR8', category_id: travel_videos.id, preview_image_url: 'https://res.cloudinary.com/devalszkz/image/upload/v1710768743/Bali_2023_fpwrbm.png')
-Video.create(title: 'California 2022', url: 'https://www.youtube.com/watch?v=VuY3Y9Cu-Lw', category_id: travel_videos.id, preview_image_url: 'https://res.cloudinary.com/devalszkz/image/upload/v1710768743/Bali_2023_fpwrbm.png')
-Video.create(title: 'Norway 2022', url: 'https://www.youtube.com/watch?v=c06K4rsrawU', category_id: travel_videos.id, preview_image_url: 'https://res.cloudinary.com/devalszkz/image/upload/v1710768743/Bali_2023_fpwrbm.png')
+Video.create(title: 'Bali 2023',
+              url: 'https://www.youtube.com/watch?v=rsqseWO4JR8',
+              category_id: travel_videos.id,
+              preview_image_url: 'https://res.cloudinary.com/devalszkz/image/upload/v1710771013/Bali_2023_vvfrkc.png')
+
+Video.create(title: 'California 2022',
+              url: 'https://www.youtube.com/watch?v=VuY3Y9Cu-Lw',
+              category_id: travel_videos.id,
+              preview_image_url: 'https://res.cloudinary.com/devalszkz/image/upload/v1710771027/California_2022_fk2jmh.png')
+
+Video.create(title: 'Norway 2022',
+              url: 'https://www.youtube.com/watch?v=c06K4rsrawU',
+              category_id: travel_videos.id,
+              preview_image_url: 'https://res.cloudinary.com/devalszkz/image/upload/v1710771501/Norway_2022_ybasd1.png')
+
+Video.create(title: 'Gran Canaria 2022',
+              url: 'https://www.youtube.com/watch?v=wwp5XnWo-dY',
+              category_id: travel_videos.id,
+              preview_image_url: 'https://res.cloudinary.com/devalszkz/image/upload/v1710771013/Gran_Canaria_2022_qhjn1u.png')
+
+Video.create(title: 'Creta 2021',
+              url: 'https://www.youtube.com/watch?v=Qn8yCjb78mI',
+              category_id: travel_videos.id,
+              preview_image_url: 'https://res.cloudinary.com/devalszkz/image/upload/v1710771617/Creta_2021_p2pwea.png')
+
+Video.create(title: 'Valencia 2021',
+              url: 'https://www.youtube.com/watch?v=YzGew_l0DJ8',
+              category_id: travel_videos.id,
+              preview_image_url: 'https://res.cloudinary.com/devalszkz/image/upload/v1710771501/Norway_2022_ybasd1.png')
+
+Video.create(title: 'Sicilia 2020',
+              url: 'https://www.youtube.com/watch?v=OLJ3LnNNHUQ',
+              category_id: travel_videos.id,
+              preview_image_url: 'https://res.cloudinary.com/devalszkz/image/upload/v1710771501/Norway_2022_ybasd1.png')
+
+Video.create(title: 'Malaga 2019',
+              url: 'https://www.youtube.com/watch?v=HgzLH8cQBEk',
+              category_id: travel_videos.id,
+              preview_image_url: 'https://res.cloudinary.com/devalszkz/image/upload/v1710771501/Norway_2022_ybasd1.png')
+
+Video.create(title: 'One day in Malaga',
+              url: 'https://www.youtube.com/watch?v=49CNg17vgnY',
+              category_id: travel_videos.id,
+              preview_image_url: 'https://res.cloudinary.com/devalszkz/image/upload/v1710771501/Norway_2022_ybasd1.png')
+
+Video.create(title: 'Alcazaba Malaga',
+              url: 'https://www.youtube.com/watch?v=mY47HmlvfNE',
+              category_id: travel_videos.id,
+              preview_image_url: 'https://res.cloudinary.com/devalszkz/image/upload/v1710771501/Norway_2022_ybasd1.png')
+
+Video.create(title: 'Sevilla 2019',
+              url: 'https://www.youtube.com/watch?v=QOQmX5DPjjE',
+              category_id: travel_videos.id,
+              preview_image_url: 'https://res.cloudinary.com/devalszkz/image/upload/v1710771501/Norway_2022_ybasd1.png')
+
+Video.create(title: 'Budapest 2018',
+              url: 'https://www.youtube.com/watch?v=ACDMWiMeDyg',
+              category_id: travel_videos.id,
+              preview_image_url: 'https://res.cloudinary.com/devalszkz/image/upload/v1710771501/Norway_2022_ybasd1.png')
+
+Video.create(title: 'Lisboa 2018',
+              url: 'https://www.youtube.com/watch?v=F60ArBYkA8U',
+              category_id: travel_videos.id,
+              preview_image_url: 'https://res.cloudinary.com/devalszkz/image/upload/v1710771501/Norway_2022_ybasd1.png')
