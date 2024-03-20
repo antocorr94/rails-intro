@@ -5,3 +5,11 @@
 h5 {
   font-family: 'Abhaya Libre', sans-serif;
 }
+
+.play-button {
+  transition: transform 0.3s ease-in-out; /* Aggiungi una transizione per creare un effetto di ingrandimento fluido */
+}
+
+.play-button:hover {
+  transform: scale(1.2); /* Ingrandisci il pulsante al passaggio del mouse */
+}

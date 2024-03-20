@@ -8,7 +8,12 @@
             <h5 class="card-title"><%= video.title %></h5>
             <% youtube_video_id = video.url.split('v=')[1] %>
             <!-- Aggiungi attributi data per passare l'ID del video a JavaScript -->
-            <a href="https://www.youtube.com/watch?v=<%= youtube_video_id %>" target="_blank" style="color: #171f23;"><i class="fa-solid fa-circle-play" style="cursor: pointer;"></i></a>
+            <a href="https://www.youtube.com/watch?v=<%= youtube_video_id %>"
+            target="_blank"
+            class="play-button"
+            style="color: #171f23;">
+            <i class="fa-solid fa-circle-play"></i>
+            </a>
           </div>
             <%# <p class="card-text"><%= video.description %>
         </div>

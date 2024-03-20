@@ -32,27 +32,32 @@ Video.create(title: 'Creta 2021',
 Video.create(title: 'Valencia 2021',
               url: 'https://www.youtube.com/watch?v=YzGew_l0DJ8',
               category_id: travel_videos.id,
-              preview_image_url: 'https://res.cloudinary.com/devalszkz/image/upload/v1710771501/Norway_2022_ybasd1.png')
+              preview_image_url: 'https://res.cloudinary.com/devalszkz/image/upload/v1710961059/Valencia_2021_f7nzcp.png')
 
 Video.create(title: 'Sicilia 2020',
               url: 'https://www.youtube.com/watch?v=OLJ3LnNNHUQ',
               category_id: travel_videos.id,
-              preview_image_url: 'https://res.cloudinary.com/devalszkz/image/upload/v1710771501/Norway_2022_ybasd1.png')
+              preview_image_url: 'https://res.cloudinary.com/devalszkz/image/upload/v1710963028/Sicilia_2020_dz8rdt.png')
 
 Video.create(title: 'Malaga 2019',
               url: 'https://www.youtube.com/watch?v=HgzLH8cQBEk',
               category_id: travel_videos.id,
-              preview_image_url: 'https://res.cloudinary.com/devalszkz/image/upload/v1710771501/Norway_2022_ybasd1.png')
+              preview_image_url: 'https://res.cloudinary.com/devalszkz/image/upload/v1710963423/Malaga_2019_efuj6u.png')
 
 Video.create(title: 'One day in Malaga',
               url: 'https://www.youtube.com/watch?v=49CNg17vgnY',
               category_id: travel_videos.id,
-              preview_image_url: 'https://res.cloudinary.com/devalszkz/image/upload/v1710771501/Norway_2022_ybasd1.png')
+              preview_image_url: 'https://res.cloudinary.com/devalszkz/image/upload/v1710964054/One_day_in_Malaga_y2abdv.png')
 
 Video.create(title: 'Alcazaba Malaga',
               url: 'https://www.youtube.com/watch?v=mY47HmlvfNE',
               category_id: travel_videos.id,
-              preview_image_url: 'https://res.cloudinary.com/devalszkz/image/upload/v1710771501/Norway_2022_ybasd1.png')
+              preview_image_url: 'https://res.cloudinary.com/devalszkz/image/upload/v1710964054/Alcazaba_id0eq4.png')
+
+Video.create(title: "Let's go! Malaga",
+              url: 'https://www.youtube.com/watch?v=9RMip-qx4u8',
+              category_id: travel_videos.id,
+              preview_image_url: 'https://res.cloudinary.com/devalszkz/image/upload/v1710964467/Let_s_go_Malaga_dtg9r0.png')
 
 Video.create(title: 'Sevilla 2019',
               url: 'https://www.youtube.com/watch?v=QOQmX5DPjjE',
