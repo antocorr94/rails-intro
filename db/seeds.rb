@@ -47,7 +47,7 @@ Video.create(title: 'Malaga 2019',
 Video.create(title: 'One day in Malaga',
               url: 'https://www.youtube.com/watch?v=49CNg17vgnY',
               category_id: travel_videos.id,
-              preview_image_url: 'https://res.cloudinary.com/devalszkz/image/upload/v1710964054/One_day_in_Malaga_y2abdv.png')
+              preview_image_url: 'https://res.cloudinary.com/devalszkz/image/upload/v1711115977/One_day_in_Malaga_ydzggh.jpg')
 
 Video.create(title: 'Alcazaba Malaga',
               url: 'https://www.youtube.com/watch?v=mY47HmlvfNE',
@@ -62,17 +62,17 @@ Video.create(title: "Let's go! Malaga",
 Video.create(title: 'Sevilla 2019',
               url: 'https://www.youtube.com/watch?v=QOQmX5DPjjE',
               category_id: travel_videos.id,
-              preview_image_url: 'https://res.cloudinary.com/devalszkz/image/upload/v1710771501/Norway_2022_ybasd1.png')
+              preview_image_url: 'https://res.cloudinary.com/devalszkz/image/upload/v1711115989/Sevilla_2019_inkyeg.jpg')
 
 Video.create(title: 'Budapest 2018',
               url: 'https://www.youtube.com/watch?v=ACDMWiMeDyg',
               category_id: travel_videos.id,
-              preview_image_url: 'https://res.cloudinary.com/devalszkz/image/upload/v1710771501/Norway_2022_ybasd1.png')
+              preview_image_url: 'https://res.cloudinary.com/devalszkz/image/upload/v1711115991/Budapest_2018_eiuylo.png')
 
 Video.create(title: 'Lisboa 2018',
               url: 'https://www.youtube.com/watch?v=F60ArBYkA8U',
               category_id: travel_videos.id,
-              preview_image_url: 'https://res.cloudinary.com/devalszkz/image/upload/v1710771501/Norway_2022_ybasd1.png')
+              preview_image_url: 'https://res.cloudinary.com/devalszkz/image/upload/v1711115991/Lisboa_2018_nstbsx.png')
 
 
 
