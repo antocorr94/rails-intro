@@ -13,7 +13,8 @@ class VideosController < ApplicationController
   end
 
   def sports_videos
-    @videos = Video.where(category: 'Sports Videos')
+    @category = Category.find_by(name: 'Sports Videos')
+    @videos = @category.videos
   end
 
   def other_videos
