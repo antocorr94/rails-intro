@@ -130,47 +130,42 @@ preview_image_url: 'https://res.cloudinary.com/devalszkz/image/upload/v171138526
 Video.create(title: 'Budapest 2020 - Artistic Swimming',
 url: 'https://www.instagram.com/reel/COsJUjCormh/',
 category_id: sports_videos.id,
-preview_image_url: 'https://res.cloudinary.com/devalszkz/image/upload/v1711376972/Hannover_2019_c1v1ay.png')
+preview_image_url: 'https://res.cloudinary.com/devalszkz/image/upload/v1711411934/Synchro_ai65xc.png')
 
 Video.create(title: 'Budapest 2020 - Diving pt. 2',
 url: 'https://www.instagram.com/reel/CO8ClT4IRBF/',
 category_id: sports_videos.id,
-preview_image_url: 'https://res.cloudinary.com/devalszkz/image/upload/v1711376972/Hannover_2019_c1v1ay.png')
+preview_image_url: 'https://res.cloudinary.com/devalszkz/image/upload/v1711412482/Diving_2_o4trug.png')
 
 Video.create(title: 'Budapest 2020 - Diving pt. 1',
 url: 'https://www.instagram.com/reel/COuwxQgoG6P/',
 category_id: sports_videos.id,
-preview_image_url: 'https://res.cloudinary.com/devalszkz/image/upload/v1711376972/Hannover_2019_c1v1ay.png')
+preview_image_url: 'https://res.cloudinary.com/devalszkz/image/upload/v1711412361/Diving_1_rguirk.png')
 
 Video.create(title: 'Budapest 2020 - Day 6',
 url: 'https://www.instagram.com/reel/CO55EDgrIGq/',
 category_id: sports_videos.id,
-preview_image_url: 'https://res.cloudinary.com/devalszkz/image/upload/v1711376972/Hannover_2019_c1v1ay.png')
-
-Video.create(title: 'Budapest 2020 - Swimming',
-url: 'https://www.instagram.com/euro.aquatics/reels/',
-category_id: sports_videos.id,
-preview_image_url: 'https://res.cloudinary.com/devalszkz/image/upload/v1711376972/Hannover_2019_c1v1ay.png')
+preview_image_url: 'https://res.cloudinary.com/devalszkz/image/upload/v1711411900/Day_6_wrph3l.png')
 
 Video.create(title: 'Budapest 2020 - Day 11',
 url: 'https://www.instagram.com/reel/CPG5sNlr2ad/',
 category_id: sports_videos.id,
-preview_image_url: 'https://res.cloudinary.com/devalszkz/image/upload/v1711376972/Hannover_2019_c1v1ay.png')
+preview_image_url: 'https://res.cloudinary.com/devalszkz/image/upload/v1711411547/Day_11_xtlos2.png')
 
 Video.create(title: 'Budapest 2020 - Day 12',
 url: 'https://www.instagram.com/reel/CPJgKJZL0oZ/',
 category_id: sports_videos.id,
-preview_image_url: 'https://res.cloudinary.com/devalszkz/image/upload/v1711376972/Hannover_2019_c1v1ay.png')
+preview_image_url: 'https://res.cloudinary.com/devalszkz/image/upload/v1711411668/Day_12_mbozeh.png')
 
 Video.create(title: 'Budapest 2020 - Day 14',
 url: 'https://www.instagram.com/reel/CPOmSRjrxBd/',
 category_id: sports_videos.id,
-preview_image_url: 'https://res.cloudinary.com/devalszkz/image/upload/v1711376972/Hannover_2019_c1v1ay.png')
+preview_image_url: 'https://res.cloudinary.com/devalszkz/image/upload/v1711411818/Day_14_doxrbt.png')
 
 Video.create(title: 'Belgrade 2022 - Cup',
 url: 'https://www.instagram.com/reel/CeRWDXilZ4-/',
 category_id: sports_videos.id,
-preview_image_url: 'https://res.cloudinary.com/devalszkz/image/upload/v1711376330/Belgrade_2022_ounpha.png')
+preview_image_url: 'https://res.cloudinary.com/devalszkz/image/upload/v1711411327/Coppa_x8kaez.png')
 
 Video.create(title: 'Belgrade 2022 - Hype',
 url: 'https://www.youtube.com/watch?v=0YASKGrkoH8',
