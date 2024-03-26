@@ -82,17 +82,17 @@ url: 'https://www.youtube.com/watch?v=cFc9U9BuSew',
 category_id: sports_videos.id,
 preview_image_url: 'https://res.cloudinary.com/devalszkz/image/upload/v1711376330/Belgrade_2022_ounpha.png')
 
-Video.create(title: 'WP2020BUDAPEST - Warm Up',
+Video.create(title: 'WP 2020 Budapest - Warm Up',
 url: 'https://www.youtube.com/watch?v=Kqfzw6fIsGo',
 category_id: sports_videos.id,
 preview_image_url: 'https://res.cloudinary.com/devalszkz/image/upload/v1711376971/Warm_Up_pndkr4.png')
 
-Video.create(title: 'WP2020BUDAPEST - Balls stop motion',
+Video.create(title: 'WP 2020 Budapest - Balls stop motion',
 url: 'https://www.youtube.com/watch?v=i1TVhkGHSsU',
 category_id: sports_videos.id,
 preview_image_url: 'https://res.cloudinary.com/devalszkz/image/upload/v1711376972/Stop_motion_qonajf.png')
 
-Video.create(title: 'WP2020BUDAPEST - Backstage',
+Video.create(title: 'WP 2020 Budapest - Backstage',
 url: 'https://www.youtube.com/watch?v=IiAhSHK_3f8',
 category_id: sports_videos.id,
 preview_image_url: 'https://res.cloudinary.com/devalszkz/image/upload/v1711376971/Backstage_a2yqt8.png')
