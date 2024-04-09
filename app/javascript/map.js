@@ -1,6 +1,6 @@
 // map.js
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("turbolinks:load", function() {
   // Inizializza la mappa con le tue credenziali Mapbox
   mapboxgl.accessToken = 'pk.eyJ1IjoiYW50b2NvcnI5NCIsImEiOiJjbHVyMGkzeG4wMmFjMmxvNW1xb3B2cWJ6In0.xXFPAgDTeYMSS2XATvSTZA';
   var map = new mapboxgl.Map({
