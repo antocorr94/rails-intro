@@ -13,3 +13,24 @@ h5 {
 .play-button:hover {
   transform: scale(1.2); /* Ingrandisci il pulsante al passaggio del mouse */
 }
+
+/* Stile per la mappa */
+#map-container {
+  position: sticky;
+  top: 0;
+  height: 100vh; /* Altezza pari all'altezza della finestra del browser */
+}
+
+/* Stile per la griglia dei video */
+#video-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Spazio tra i video */
+  padding: 10px; /* Spazio interno */
+}
+
+  /* Stile per i video */
+.video-card {
+  width: calc(50% - 10px); /* Larghezza massima per due video affiancati */
+  flex-grow: 1; /* I video si espandono per riempire lo spazio disponibile */
+}

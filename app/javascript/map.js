@@ -13,14 +13,37 @@ document.addEventListener("DOMContentLoaded", function() {
   // Funzione per aggiungere marker
   function addMarkers(videos) {
     videos.forEach(function(video) {
-      var videoCoords = [video.latitude, video.longitude]; // Coordinate del video
-      var videoPopup = "<b>" + video.title + "</b><br><a href='" + video.url + "' target='_blank'>Guarda il video</a>"; // Contenuto del popup
-      new mapboxgl.Marker()
-        .setLngLat(videoCoords)
-        .setPopup(new mapboxgl.Popup().setHTML(videoPopup))
-        .addTo(map);
+        var latitude = parseFloat(video.latitude);
+        var longitude = parseFloat(video.longitude);
+
+        // Debugging latitude value
+        console.log("Video title:", video.title);
+        console.log("Latitude:", latitude);
+        console.log("Longitude:", longitude);
+
+        // Check if latitude value is within valid range
+        if (latitude >= -90 && latitude <= 90) {
+            var videoCoords = [longitude, latitude]; // Corrected order: [longitude, latitude]
+            var videoPopup = "<b>" + video.title + "</b><br><a href='" + video.url + "' target='_blank'>Guarda il video</a>"; // Popup content
+            new mapboxgl.Marker()
+                .setLngLat(videoCoords)
+                .setPopup(new mapboxgl.Popup().setHTML(videoPopup))
+                .addTo(map);
+        } else {
+            console.error("Invalid latitude value for video:", video.title);
+            // Handle invalid latitude value, such as displaying an error message or skipping the marker
+        }
     });
-  }
+}
+
+
+// Function to check if coordinates are within valid range
+function isValidCoordinates(coords) {
+    var latitude = coords[0];
+    var longitude = coords[1];
+    return latitude >= -90 && latitude <= 90 && longitude >= -180 && longitude <= 180;
+}
+
 
   // Recupera i dati dei video dalla pagina HTML e aggiungi i markers
   function fetchAndAddMarkers() {
