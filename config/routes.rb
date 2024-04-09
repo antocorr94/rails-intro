@@ -6,10 +6,7 @@ Rails.application.routes.draw do
     get 'other_videos', on: :collection
   end
 
-  # Altre routes...
-
   root to: "pages#home"
   get "about", to: "pages#about"
   get "contact", to: "pages#contact"
 end
-
