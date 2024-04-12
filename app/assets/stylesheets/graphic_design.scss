@@ -1,21 +1,22 @@
-.moodboard-1 {
+.mood {
+  display: flex;
+  flex-direction: column; /* Align elements in a column */
+  align-items: center; /* Center items horizontally */
+}
+
+.moodboard-1,
+.moodboard-2 {
   height: 100vh;
-  width: 80%; /* Set the width to 80% */
-  max-width: 1000px; /* Optional: Limit the maximum width */
-  margin: 0 auto; /* Center the element horizontally */
-  background-image: url('Miele.png');
+  width: 100vw; /* Set the width to 100% of the viewport width */
   background-size: contain; /* Adjusted to contain the image within the element */
   background-repeat: no-repeat;
-  margin-bottom: 0px;
+  margin: 10px 0; /* Add some margin between the images */
+}
+
+.moodboard-1 {
+  background-image: url('Miele.png');
 }
 
 .moodboard-2 {
-  margin-top: 0px;
-  height: 100vh;
-  width: 80%; /* Set the width to 80% */
-  max-width: 1000px; /* Optional: Limit the maximum width */
-  margin: 0 auto; /* Center the element horizontally */
   background-image: url('Calcio.png');
-  background-size: contain; /* Adjusted to contain the image within the element */
-  background-repeat: no-repeat;
 }
