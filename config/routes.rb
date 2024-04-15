@@ -12,5 +12,5 @@ Rails.application.routes.draw do
   get "about", to: "pages#about"
   get "contact", to: "pages#contact"
   get 'graphic_design', to: 'pages#graphic_design'
-
+  get 'illustration', to: 'pages#illustration'
 end
