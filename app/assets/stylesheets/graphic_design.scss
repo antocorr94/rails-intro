@@ -1,15 +1,18 @@
 .mood {
   display: flex;
-  flex-direction: column; /* Align elements in a column */
-  align-items: center; /* Center items horizontally */
+  flex-direction: column; /* Allinea gli elementi in una colonna */
+  align-items: center; /* Centra gli elementi orizzontalmente */
 }
 
 .moodboard-1,
-.moodboard-2 {
-  height: 100vh;
-  width: 100vw; /* Set the width to 100% of the viewport width */
-  background-size: contain; /* Adjusted to contain the image within the element */
+.moodboard-2,
+.moodboard-3,
+.moodboard-4 {
+  height: 80vh;
+  width: 100%; /* Imposta la larghezza al 100% della larghezza del contenitore padre */
+  background-size: contain; /* Modificato per contenere l'immagine all'interno dell'elemento */
   background-repeat: no-repeat;
+  margin: 0 0px; /* Aggiunto margini ai moodboard per ridurre lo spazio tra di essi */
 }
 
 .moodboard-1 {
@@ -18,4 +21,12 @@
 
 .moodboard-2 {
   background-image: url('Calcio.png');
+}
+
+.moodboard-3 {
+  background-image: url('rabu.png');
+}
+
+.moodboard-4 {
+  background-image: url('Mbriana.png');
 }
