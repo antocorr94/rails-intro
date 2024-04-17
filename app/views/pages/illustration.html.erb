@@ -1,52 +1,50 @@
 <div class='m-5'>
   <h1>Illustration</h1>
   <hr class="line my-3" style="border-color: #171F23; width: 50%; height: 5px; text-align: left;">
-<div class="grid-container">
-  <div class="grid-item">
-    <img src="assets/butterflies.jpg" id="image1" class="illustration-image">
-  </div>
-  <div class="grid-item">
-    <img src="assets/Heart.jpg" id="image2" class="illustration-image">
-  </div>
-  <div class="grid-item">
-    <img src="assets/Kintsugi.jpg" id="image2" class="illustration-image">
-  </div>
-  <div class="grid-item">
-    <img src="assets/Orbiting.jpg" id="image2" class="illustration-image">
-  </div>
-  <div class="grid-item">
-    <img src="assets/overthinking.jpg" id="image2" class="illustration-image">
-  </div>
-  <div class="grid-item">
-    <img src="assets/Tramonto.jpg" id="image2" class="illustration-image">
+  <div class="grid-container">
+    <div class="grid-item">
+      <img src="https://res.cloudinary.com/devalszkz/image/upload/v1713351402/butterflies_nybkl1.jpg" id="image1" class="illustration-image">
+    </div>
+    <div class="grid-item">
+      <img src="https://res.cloudinary.com/devalszkz/image/upload/v1713351396/Heart_iyti1g.jpg" id="image2" class="illustration-image">
+    </div>
+    <div class="grid-item">
+      <img src="https://res.cloudinary.com/devalszkz/image/upload/v1713351398/Kintsugi_slftak.jpg" id="image3" class="illustration-image">
+    </div>
+    <div class="grid-item">
+      <img src="https://res.cloudinary.com/devalszkz/image/upload/v1713351398/Orbiting_qkcmfc.jpg" id="image4" class="illustration-image">
+    </div>
+    <div class="grid-item">
+      <img src="https://res.cloudinary.com/devalszkz/image/upload/v1713351396/overthinking_dszhxj.jpg" id="image5" class="illustration-image">
+    </div>
+    <div class="grid-item">
+      <img src="https://res.cloudinary.com/devalszkz/image/upload/v1713351398/Tramonto_y27iuw.jpg" id="image6" class="illustration-image">
+    </div>
   </div>
 
-</div>
-
-<!-- Finestra modale -->
-<div id="modal-container" class="modal-container">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal()">&times;</span>
-    <img id="modal-image" class="modal-img">
+  <!-- Finestra modale -->
+  <div id="modal-container" class="modal-container">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img id="modal-image" class="modal-img">
+    </div>
   </div>
-</div>
 </div>
 
 <script>
   // JavaScript per aprire la finestra modale e visualizzare l'immagine a schermo intero
-document.querySelectorAll('.illustration-image').forEach(item => {
-  item.addEventListener('click', event => {
-    const modal = document.getElementById('modal-container');
-    const modalImg = document.getElementById('modal-image');
-    modalImg.src = event.target.src;
-    modal.style.display = "flex";
+  document.querySelectorAll('.illustration-image').forEach(item => {
+    item.addEventListener('click', event => {
+      const modal = document.getElementById('modal-container');
+      const modalImg = document.getElementById('modal-image');
+      modalImg.src = event.target.src;
+      modal.style.display = "flex";
+    });
   });
-});
 
-// Chiudi la finestra modale quando l'utente clicca sul pulsante di chiusura
-function closeModal() {
-  const modal = document.getElementById('modal-container');
-  modal.style.display = "none";
-}
-
+  // Chiudi la finestra modale quando l'utente clicca sul pulsante di chiusura
+  function closeModal() {
+    const modal = document.getElementById('modal-container');
+    modal.style.display = "none";
+  }
 </script>
