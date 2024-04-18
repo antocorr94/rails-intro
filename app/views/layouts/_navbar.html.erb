@@ -1,4 +1,4 @@
- <!-- _navbar.html.erb -->
+<!-- _navbar.html.erb -->
 <nav class="navbar navbar-expand-lg <%= 'bg-white' unless controller_name == 'pages' && action_name == 'home' %> p-3">
   <div class="container-fluid">
     <a class="navbar-brand" href="<%= root_path %>">
@@ -17,20 +17,20 @@
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <li><%= link_to "Travel Videos", travel_videos_videos_path, class: "dropdown-item" %></li>
             <li><%= link_to "Sports Videos", sports_videos_videos_path, class: "dropdown-item" %></li>
-            <li><a class="dropdown-item" href="#">Other Videos</a></li>
+            <li><%= link_to "Other Videos", other_videos_videos_path, class: "dropdown-item" %></li>
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link mx-2" href="#">Graphic Design</a>
+          <%= link_to "Graphic Design", graphic_design_path, class: "nav-link mx-2" %>
         </li>
         <li class="nav-item">
-          <a class="nav-link mx-2" href="#">Illustration</a>
+          <%= link_to "Illustration", illustration_path, class: "nav-link mx-2" %>
         </li>
         <li class="nav-item">
           <a class="nav-link mx-2 active" aria-current="page" href="#">Web Development</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link mx-2 active" aria-current="page" href="#">Contacts</a>
+          <%= link_to "Contacts", contact_path, class: "nav-link mx-2 active", aria_current: "page" %>
         </li>
         <li class="nav-item">
           <a class="nav-link mx-2 active" aria-current="page" href="#"><strong>BLOG</strong></a>
