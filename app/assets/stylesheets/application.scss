@@ -4,6 +4,7 @@
 @import 'travel_videos';
 @import 'graphic_design';
 @import 'illustration';
+@import 'contacts';
 
 
 body {
@@ -33,4 +34,8 @@ h1, h2, h3 {
 
 body {
   background-color: #EBEAEA;
+}
+
+a {
+  color: #08708e;
 }
