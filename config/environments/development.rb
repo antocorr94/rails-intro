@@ -73,4 +73,6 @@ Rails.application.configure do
 
   config.cloudinary = Rails.application.credentials.cloudinary
 
+  config.action_view.preload_links_header = false
+  
 end
