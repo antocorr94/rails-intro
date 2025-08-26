@@ -1,30 +1,49 @@
+<!-- app/views/videos/sports_videos.html.erb -->
 <div class="row m-2 pt-2">
-  <% @videos.each do |video| %>
-    <div class="col-md-4">
-      <div class="card mb-4 shadow-sm">
-        <img src="<%= video.preview_image_url %>" class="card-img-top" alt="<%= video.title %>">
-        <div class="card-body">
-          <div class='d-flex justify-content-between align-self-center'>
-            <h5 class="card-title"><%= video.title %></h5>
-            <%
-              if video.url.include?("youtube.com")
-                youtube_video_id = video.url.split('v=')[1]
-                video_url = "https://www.youtube.com/watch?v=#{youtube_video_id}"
-              elsif video.url.include?("instagram.com")
-                instagram_video_id = video.url.split('/').last
-                video_url = "https://www.instagram.com/p/#{instagram_video_id}/"
-              else
-                video_url = video.url
-              end
-            %>
-            <!-- Aggiungi attributi data per passare l'URL del video a JavaScript -->
-            <a href="<%= video_url %>" target="_blank" class="play-button" style="color: #171f23;">
-              <i class="fa-solid fa-circle-play"></i>
-            </a>
+  <!-- Sezione video -->
+  <div id="video-container" class="col-md-8">
+    <% @videos.each do |video| %>
+      <%# Costruisci l'URL di riproduzione come nella pagina originale %>
+      <%
+        if video.url.include?("youtube.com")
+          youtube_video_id = video.url.split('v=')[1]
+          play_url = "https://www.youtube.com/watch?v=#{youtube_video_id}"
+        elsif video.url.include?("instagram.com")
+          instagram_video_id = video.url.split('/').last
+          play_url = "https://www.instagram.com/p/#{instagram_video_id}/"
+        else
+          play_url = video.url
+        end
+      %>
+
+      <div class="video-card"
+           data-latitude="<%= video.latitude %>"
+           data-longitude="<%= video.longitude %>"
+           data-title="<%= video.title %>"
+           data-url="<%= video.url %>">
+        <div class="card mb-4 shadow-sm">
+          <img src="<%= video.preview_image_url %>"
+               class="card-img-top"
+               alt="<%= video.title %>">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-self-center">
+              <h5 class="card-title"><%= video.title %></h5>
+              <a href="<%= play_url %>"
+                 target="_blank"
+                 class="play-button"
+                 style="color: #171f23;">
+                <i class="fa-solid fa-circle-play"></i>
+              </a>
+            </div>
+            <%#= content_tag(:p, video.description, class: "card-text") %>
           </div>
-            <%# <p class="card-text"><%= video.description %>
         </div>
       </div>
-    </div>
-  <% end %>
+    <% end %>
+  </div>
+
+  <!-- Mappa -->
+  <div id="map-container" class="col-md-4">
+    <div id="map" style="height: 100%;"></div>
+  </div>
 </div>
