@@ -19,9 +19,6 @@ h1, h2, h3 {
   color: $primary-color;
 }
 
-/* And so on... */
-
-
 .airplane {
   width: 200px;
   height: 50px; /* Add a height */
@@ -38,4 +35,20 @@ body {
 
 a {
   color: #08708e;
+}
+
+/* Make video cards scale up smoothly on hover */
+.video-card .card {
+  transition: transform 0.3s cubic-bezier(0.4, 0.2, 0.2, 1), box-shadow 0.3s;
+}
+
+.video-card .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+/* Show Bootstrap dropdown on hover */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0; // Optional: aligns dropdown with button
 }
